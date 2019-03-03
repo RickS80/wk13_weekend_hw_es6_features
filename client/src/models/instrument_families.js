@@ -2,7 +2,7 @@ import {PubSub} from '../helpers/pub_sub.js';
 
 
 
-class InstrumentFamilies  {
+class InstrumentFamilies {
   constructor (data){
   this.data = data;
 };
@@ -21,5 +21,6 @@ publishFamilyDetail(selectedIndex) {
   PubSub.publish('InstrumentFamilies:selected-family-ready', selectedFamily)
 };
 
+
 }
-export default InstrumentFamilies;
+export {InstrumentFamilies};
